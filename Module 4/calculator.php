@@ -24,7 +24,7 @@
         $num1 = $_POST['num_1'];
         $num2 = $_POST['num_2'];
         $sum = $num1 + $num2;
-    echo "The sum is:" . $sum;
+    echo "<br><h3>The sum is: " . $sum . "</h3>";
     }
     ?>
 </body>
