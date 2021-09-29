@@ -16,7 +16,16 @@
         <label for="num_2">Second Number</label>
         <input type="number" name="num_2" value="" min="0" required>
         <br><br>
-        <input type="submit" value="Calculate Sum">
+        <input type="submit" name="submit" value="Calculate Sum">
     </form>
+
+    <?php
+    if(isset($_POST['submit'])) {
+        $num1 = $_POST['num_1'];
+        $num2 = $_POST['num_2'];
+        $sum = $num1 + $num2;
+    echo "The sum is:" . $sum;
+    }
+    ?>
 </body>
 </html>
